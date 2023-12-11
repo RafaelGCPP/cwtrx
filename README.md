@@ -1,1 +1,1 @@
-# cwtrx
+# A simple CW Transceiver prototype
