@@ -27,8 +27,14 @@ class SallenKeySection:
         
         if den[0]==0: # first order
             #TODO implement first order filter
-            pass 
-            return                
+            if num[1]==0: #LP
+                pass
+            elif num[0]==0: #HP
+                pass
+            else:
+                raise "First order section not realizable with RC"
+
+            
 
         # second order
         if num[0]==0:  # either a1 s+ a0 or a0
