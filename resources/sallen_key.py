@@ -15,9 +15,18 @@ class SallenKeySection:
 
         #TODO check for zeros in numerator and choose filter type
 
+        
+        if den[0]==0: # first order
+            #TODO implement first order filter
+            pass 
+            return                
+
+        # second order
         if num[0]==0:  # either a1 s+ a0 or a0
             if num[1]==0: # a0
+                #TODO implement all pole low pass
                 pass
+                return
             else:
                 pass
         elif num[1]==0: # either a2 s^2 + a0 or a2 s^2
@@ -27,10 +36,9 @@ class SallenKeySection:
                 pass
         else: # general case a2 s^2 + a1 s + a0
             pass
-            
-        
-        #TODO check filter order (denominator)   
 
-        
+        raise "Not implemented yet" #TODO implement remaining cases
+            
+
 
 
